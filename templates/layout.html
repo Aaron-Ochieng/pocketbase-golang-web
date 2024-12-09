@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <title>{{block "title" .}} PocketBase Go-Web {{end}}</title>
 </head>
 
 <body class="bg-slate-900">
     <div class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 py-4">
         <!-- Navbar -->
-        <div class="text-white border border-slate-500 p-4 rounded-md text-2xl font-bold">PocketBase Golang Web</div>
-        
-        
+        <div class="flex text-white border border-slate-500 p-4 rounded-md text-2xl font-bold justify-between">
+            <p>PocketBase Golang Web</p>
+            <a href="/new_post">
+                <button
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-1 px-2 rounded shadow-lg hover:shadow-xl transition-all">
+                    New Post
+                </button>
+
+            </a>
+        </div>
         <!-- Content Area -->
         {{block "body" .}} {{end}}
-
-        
     </div>
 </body>
 
