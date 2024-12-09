@@ -1,0 +1,21 @@
+{{define "title"}} {{.title}} {{end}} {{define "body"}}
+
+{{range .posts}}
+<div class="mt-4 mb-8 border p-8 rounded-lg border-gray-500">
+    <div class="flex space-x-2">
+        <!-- Icon -->
+        <img src="https://themeisle.com/blog/wp-content/uploads/2024/06/Online-Image-Optimizer-Test-Image-PNG-Version.png"
+            alt="" class="h-8 w-8 rounded-full">
+        <span class="flex mx-2 space-x-2">
+            <p class="font-bold text-gray-300">Test User</p>
+            <p class="font-mono text-slate-300">@testUser</p>
+        </span>
+    </div>
+    <!-- Content -->
+
+    <div id={{.Id}} class="ml-10">
+        <p class="text-white">{{.Content}}</p>
+    </div>
+</div>
+{{end}}
+{{end}}
