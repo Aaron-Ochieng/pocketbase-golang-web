@@ -1,0 +1,23 @@
+{{define "title"}} Page 1 {{end}} {{define "body"}}
+<form method="post" action="register">
+    <div>
+        <p>Username</p>
+        <input type="text" name="usename" / >
+    </div>
+    <div>
+        <p>Email Address</p>
+        <input type="email" name="email" / >
+    </div>
+    <div>
+        <p>Password</p>
+        <input type="password" name="password" / >
+    </div>
+    <div>
+        <p>Confirm password</p>
+        <input type="password" name="confirm" / >
+    </div>
+    <div>
+        <input type="submit" value="submit" / >
+    </div>
+</form>
+{{end}}
